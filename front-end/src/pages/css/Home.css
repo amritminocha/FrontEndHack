@@ -1,0 +1,18 @@
+.Background{
+    background-color: #110E17;
+    width: 100vw;
+    height: 100vh;
+}
+.Title{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 102%; /* 83.64px */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
