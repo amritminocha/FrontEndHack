@@ -11,8 +11,5 @@
     font-style: normal;
     font-weight: 400;
     line-height: 102%; /* 83.64px */
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    align-content: center;
 }
