@@ -75,41 +75,41 @@ function Menu() {
           <h1 className="Title2">Select an avatar!</h1>
           <div className="d-flex justify-content-center gap-3 m-2">
             <button className="avator-button" onClick={() => setAvatar(1)}>
-              <Card
-                image={avator1}
-                title="Avatar 1"
+              <img 
+                src={avator1}
+                alt="Avatar 1"
               />
             </button>
             <button className="avator-button" onClick={() => setAvatar(2)}>
-              <Card
-                image={avator2}
-                title="Avatar 2"
+              <img
+                src={avator2}
+                alt="Avatar 2"
               />
             </button>
             <button className="avator-button" onClick={() => setAvatar(3)}>
-              <Card
-                image={avator3}
-                title="Avatar 3"
+              <img
+                src={avator3}
+                alt="Avatar 3"
               />
             </button>
           </div>
           <div className="d-flex justify-content-center gap-3 m-2">
             <button className="avator-button" onClick={() => setAvatar(4)}>
-              <Card
-                image={avator4}
-                title="Avatar 4"
+              <img
+                src={avator4}
+                alt="Avatar 4"
               />
             </button>
             <button className="avator-button" onClick={() => setAvatar(5)}>
-              <Card
-                image={avator5}
-                title="Avatar 5"
+              <img
+                src={avator5}
+                alt="Avatar 5"
               />
             </button>
             <button className="avator-button" onClick={() => setAvatar(6)}>
-              <Card
-                image={avator6}
-                title="Avatar 6"
+              <img
+                src={avator6}
+                alt="Avatar 6"
               />
             </button>
           </div>
