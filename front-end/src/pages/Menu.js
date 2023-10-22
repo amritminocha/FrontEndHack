@@ -32,7 +32,7 @@ function Menu() {
         <div className="container text-white p-5">
           <h1 className="Title">Just two steps to go!</h1>
           <h1 className="Title2">Select a template!</h1>
-          <div className="d-flex justify-content-center gap-3 m-2">
+          <div className="d-flex justify-content-center gap-3 m-2 ">
             <button className="p-0 m-0" onClick={() => setTemplate(1)}>
               <Card
                 image={template1}
@@ -74,19 +74,19 @@ function Menu() {
           </div>
           <h1 className="Title2">Select an avatar!</h1>
           <div className="d-flex justify-content-center gap-3 m-2">
-            <button className="p-0 m-0" onClick={() => setAvatar(1)}>
+            <button className="avator-button" onClick={() => setAvatar(1)}>
               <Card
                 image={avator1}
                 title="Avatar 1"
               />
             </button>
-            <button className="p-0 m-0" onClick={() => setAvatar(2)}>
+            <button className="avator-button" onClick={() => setAvatar(2)}>
               <Card
                 image={avator2}
                 title="Avatar 2"
               />
             </button>
-            <button className="p-0 m-0" onClick={() => setAvatar(3)}>
+            <button className="avator-button" onClick={() => setAvatar(3)}>
               <Card
                 image={avator3}
                 title="Avatar 3"
@@ -94,19 +94,19 @@ function Menu() {
             </button>
           </div>
           <div className="d-flex justify-content-center gap-3 m-2">
-            <button className="p-0 m-0" onClick={() => setAvatar(4)}>
+            <button className="avator-button" onClick={() => setAvatar(4)}>
               <Card
                 image={avator4}
                 title="Avatar 4"
               />
             </button>
-            <button className="p-0 m-0" onClick={() => setAvatar(5)}>
+            <button className="avator-button" onClick={() => setAvatar(5)}>
               <Card
                 image={avator5}
                 title="Avatar 5"
               />
             </button>
-            <button className="p-0 m-0" onClick={() => setAvatar(6)}>
+            <button className="avator-button" onClick={() => setAvatar(6)}>
               <Card
                 image={avator6}
                 title="Avatar 6"
