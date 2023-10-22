@@ -19,6 +19,7 @@ function Menu() {
   const [text, setText] = useState(location.state.text);
   const [type, setType] = useState(location.state.type);
   const [file, setFile] = useState(location.state.file);
+  const [language, setLanguage] = useState(location.state.language);
   const [avatar, setAvatar] = useState(1);
   const [template, setTemplate] = useState(1);
 
@@ -33,66 +34,66 @@ function Menu() {
           <h1 className="Title">Just two steps to go!</h1>
           <h1 className="Title2">Select a template!</h1>
           <div className="d-flex justify-content-center gap-3 m-2 ">
-            <button className={`p-0 m-0 ${template === 1 ? "selected2" : ""}`} onClick={() => setTemplate(1)}>
-              <Card
-                image={template1}
-                title="Template 1"
-              />
+            <button
+              className={`p-0 m-0 ${template === 1 ? "selected2" : ""}`}
+              onClick={() => setTemplate(1)}
+            >
+              <Card image={template1} title="Template 1" />
             </button>
-            <button className={`p-0 m-0 ${template === 2 ? "selected2" : ""}`} onClick={() => setTemplate(2)}>
-              <Card
-                image={template2}
-                title="Template 2"
-              />
+            <button
+              className={`p-0 m-0 ${template === 2 ? "selected2" : ""}`}
+              onClick={() => setTemplate(2)}
+            >
+              <Card image={template2} title="Template 2" />
             </button>
-            <button className={`p-0 m-0 ${template === 3 ? "selected2" : ""}`} onClick={() => setTemplate(3)}>
-              <Card
-                image={template3}
-                title="Template 3"
-              />
+            <button
+              className={`p-0 m-0 ${template === 3 ? "selected2" : ""}`}
+              onClick={() => setTemplate(3)}
+            >
+              <Card image={template3} title="Template 3" />
             </button>
           </div>
           <div className="d-flex justify-content-center gap-3 m-2">
-            <button className={`p-0 m-0 ${template === 4 ? "selected2" : ""}`} onClick={() => setTemplate(4)}>
-              <Card
-                image={template4}
-                title="Template 1"
-              />
+            <button
+              className={`p-0 m-0 ${template === 4 ? "selected2" : ""}`}
+              onClick={() => setTemplate(4)}
+            >
+              <Card image={template4} title="Template 1" />
             </button>
-            <button className={`p-0 m-0 ${template === 5 ? "selected2" : ""}`} onClick={() => setTemplate(5)}>
-              <Card
-                image={template5}
-                title="Template 2"
-              />
+            <button
+              className={`p-0 m-0 ${template === 5 ? "selected2" : ""}`}
+              onClick={() => setTemplate(5)}
+            >
+              <Card image={template5} title="Template 2" />
             </button>
-            <button className={`p-0 m-0 ${template === 6 ? "selected2" : ""}`}onClick={() => setTemplate(6)}>
-              <Card
-                image={template6}
-                title="Template 3"
-              />
+            <button
+              className={`p-0 m-0 ${template === 6 ? "selected2" : ""}`}
+              onClick={() => setTemplate(6)}
+            >
+              <Card image={template6} title="Template 3" />
             </button>
           </div>
           <h1 className="Title2">Select an avatar!</h1>
           <div className="d-flex justify-content-center gap-3 m-2">
-            <button className="avator-button"  onClick={() => setAvatar(1)}>
-              <img 
+            <button className="avator-button" onClick={() => setAvatar(1)}>
+              <img
                 src={avator1}
                 alt="Avatar 1"
-                className={` ${avatar === 1 ? "selected" : ""}`} 
+                className={` ${avatar === 1 ? "selected" : ""}`}
               />
             </button>
             <button className="avator-button" onClick={() => setAvatar(2)}>
               <img
                 src={avator2}
                 alt="Avatar 2"
-                className={` ${avatar === 2 ? "selected" : ""}`} 
+                className={` ${avatar === 2 ? "selected" : ""}`}
               />
             </button>
             <button className="avator-button" onClick={() => setAvatar(3)}>
               <img
                 src={avator3}
                 alt="Avatar 3"
-                className={` ${avatar === 3 ? "selected" : ""}`} 
+                className={` ${avatar === 3 ? "selected" : ""}`}
               />
             </button>
           </div>
@@ -101,21 +102,21 @@ function Menu() {
               <img
                 src={avator4}
                 alt="Avatar 4"
-                className={` ${avatar === 4 ? "selected" : ""}`} 
+                className={` ${avatar === 4 ? "selected" : ""}`}
               />
             </button>
             <button className="avator-button" onClick={() => setAvatar(5)}>
               <img
                 src={avator5}
                 alt="Avatar 5"
-                className={` ${avatar === 5 ? "selected" : ""}`} 
+                className={` ${avatar === 5 ? "selected" : ""}`}
               />
             </button>
             <button className="avator-button " onClick={() => setAvatar(6)}>
               <img
                 src={avator6}
                 alt="Avatar 6"
-                className={` ${avatar === 6 ? "selected" : ""}`}  
+                className={` ${avatar === 6 ? "selected" : ""}`}
               />
             </button>
           </div>

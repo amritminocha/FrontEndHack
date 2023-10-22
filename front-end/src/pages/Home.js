@@ -9,6 +9,7 @@ function Home() {
   const [text, setText] = useState("");
   const [file, setFile] = useState("");
   const [type, setType] = useState("prompt");
+  const [language, setLanguage] = useState("English");
   const history = useNavigate();
 
   const handleFile = (e) => {
@@ -20,16 +21,22 @@ function Home() {
     e.preventDefault();
     if (file !== "") {
       console.log(file);
-      history("/menu", { state: { text: text, type: type, file: file } });
+      history("/menu", {
+        state: { text: text, type: type, file: file, language: language },
+      });
     } else if (type === "prompt") {
       if (text !== "") {
-        history("/menu", { state: { text: text, type: type } });
+        history("/menu", {
+          state: { text: text, type: type, language: language },
+        });
       } else {
         alert("Please enter a prompt");
       }
     } else if (type === "youtube") {
       if (text !== "") {
-        history("/menu", { state: { text: text, type: type } });
+        history("/menu", {
+          state: { text: text, type: type, language: language },
+        });
       } else {
         alert("Please enter a youtube URL");
       }
@@ -78,22 +85,90 @@ function Home() {
           </div>
         </div>
         <div className="d-flex container text-white justify-content-center z-5 pb-3">
-        <label htmlFor="file" className="custom-file-upload">
-    Select File
-  </label>
-  <input
-    type="file"
-    id="file"
-    className="text-primary"
-    onChange={handleFile}
-    style={{ display: 'none' }} 
-  />
-</div>
-<div className="d-flex container text-white justify-content-center z-5">
-  <button className="btn btn-primary btn-lg" onClick={handleClick}>
-    Lets Roll
-  </button>
-</div>
+          <label htmlFor="file" className="custom-file-upload">
+            Select File
+          </label>
+          <input
+            type="file"
+            id="file"
+            className="text-primary"
+            onChange={handleFile}
+            style={{ display: "none" }}
+          />
+        </div>
+        <div className="d-flex container text-white justify-content-center gap-5 p-2 z-5 pb-3">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {language}
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onClick={() => setLanguage("English")}
+                >
+                  Enlgish
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onClick={() => setLanguage("Spanish")}
+                >
+                  Spanish
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onClick={() => setLanguage("Arabic")}
+                >
+                  Arabic
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onClick={() => setLanguage("Hindi")}
+                >
+                  Hindi
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onClick={() => setLanguage("Mandarin")}
+                >
+                  Mandarin
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onClick={() => setLanguage("French")}
+                >
+                  French
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="d-flex container text-white justify-content-center z-5">
+          <button className="btn btn-primary btn-lg" onClick={handleClick}>
+            Lets Roll
+          </button>
+        </div>
       </div>
     </div>
   );
