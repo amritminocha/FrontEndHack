@@ -37,21 +37,18 @@ function Menu() {
               <Card
                 image={template1}
                 title="Template 1"
-                onClick={() => setTemplate(1)}
               />
             </button>
             <button className="p-0 m-0" onClick={() => setTemplate(2)}>
               <Card
                 image={template2}
                 title="Template 2"
-                onClick={() => setTemplate(2)}
               />
             </button>
             <button className="p-0 m-0" onClick={() => setTemplate(3)}>
               <Card
                 image={template3}
                 title="Template 3"
-                onClick={() => setTemplate(3)}
               />
             </button>
           </div>
@@ -60,21 +57,18 @@ function Menu() {
               <Card
                 image={template4}
                 title="Template 1"
-                onClick={() => setTemplate(4)}
               />
             </button>
             <button className="p-0 m-0" onClick={() => setTemplate(5)}>
               <Card
                 image={template5}
                 title="Template 2"
-                onClick={() => setTemplate(5)}
               />
             </button>
             <button className="p-0 m-0" onClick={() => setTemplate(6)}>
               <Card
                 image={template6}
                 title="Template 3"
-                onClick={() => setTemplate(6)}
               />
             </button>
           </div>
@@ -84,21 +78,18 @@ function Menu() {
               <Card
                 image={avator1}
                 title="Avatar 1"
-                onClick={() => setAvatar(1)}
               />
             </button>
             <button className="p-0 m-0" onClick={() => setAvatar(2)}>
               <Card
                 image={avator2}
                 title="Avatar 2"
-                onClick={() => setAvatar(2)}
               />
             </button>
             <button className="p-0 m-0" onClick={() => setAvatar(3)}>
               <Card
                 image={avator3}
                 title="Avatar 3"
-                onClick={() => setAvatar(3)}
               />
             </button>
           </div>
@@ -107,21 +98,18 @@ function Menu() {
               <Card
                 image={avator4}
                 title="Avatar 4"
-                onClick={() => setAvatar(4)}
               />
             </button>
             <button className="p-0 m-0" onClick={() => setAvatar(5)}>
               <Card
                 image={avator5}
                 title="Avatar 5"
-                onClick={() => setAvatar(5)}
               />
             </button>
             <button className="p-0 m-0" onClick={() => setAvatar(6)}>
               <Card
                 image={avator6}
                 title="Avatar 6"
-                onClick={() => setAvatar(6)}
               />
             </button>
           </div>
