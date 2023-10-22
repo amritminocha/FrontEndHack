@@ -78,18 +78,22 @@ function Home() {
           </div>
         </div>
         <div className="d-flex container text-white justify-content-center z-5 pb-3">
-          <input
-            type="file"
-            id="file"
-            className="text-primary"
-            onChange={handleFile}
-          />
-        </div>
-        <div className="d-flex container text-white justify-content-center z-5">
-          <button className="btn btn-primary btn-lg" onClick={handleClick}>
-            Lets Roll
-          </button>
-        </div>
+        <label htmlFor="file" className="custom-file-upload">
+    Select File
+  </label>
+  <input
+    type="file"
+    id="file"
+    className="text-primary"
+    onChange={handleFile}
+    style={{ display: 'none' }} 
+  />
+</div>
+<div className="d-flex container text-white justify-content-center z-5">
+  <button className="btn btn-primary btn-lg" onClick={handleClick}>
+    Lets Roll
+  </button>
+</div>
       </div>
     </div>
   );
