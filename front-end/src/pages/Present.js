@@ -20,7 +20,7 @@ import audio7 from "../assets/audio_samples/audio7.mp3";
 import audio8 from "../assets/audio_samples/audio8.mp3";
 import audio9 from "../assets/audio_samples/audio9.mp3";
 import audio10 from "../assets/audio_samples/audio10.mp3";
-import avator4 from "../assets/avators/avator (4).png";
+import avator1 from "../assets/avators/avator (1).png";
 function Present() {
   const simulatedSlides = [
     {
@@ -111,7 +111,7 @@ function Present() {
     <div className="Background3">
       <div className="d-flex justify-content-center gap-3 m-2">
         <button className="avator-button">
-          <img src={avator4} alt="Avatar 4" />
+          <img src={avator1} alt="Avatar 1" />
         </button>
       </div>
       <Carousel slide={simulatedSlides} audioRefs={audioRefs} />
