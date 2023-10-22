@@ -10,12 +10,12 @@ function Carousel() {
 
   return (
     <div className="center">
-      <div id="carouselExample" className="carousel slide">
+      <div id="carouselExample" className="carousel slide h">
         <div className="carousel-inner">
           <div
             className={`carousel-item ${currentSlide === 0 ? "active" : ""}`}
           >
-            <img src={avator} className="d-block w-100" alt="Slide 1" />
+            <img src={avator} className="d-block w-100 h-50" alt="Slide 1" />
           </div>
           <div
             className={`carousel-item ${currentSlide === 1 ? "active" : ""}`}
