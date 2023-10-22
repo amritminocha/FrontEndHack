@@ -6,6 +6,7 @@ import template3 from "../assets/templates/template1 (3).png";
 import music1 from "../assets/audio_samples/music1.mp3";
 import music2 from "../assets/audio_samples/music2.mp3";
 import music3 from "../assets/audio_samples/music3.mp3";
+import avator1 from "../assets/avators/avator (1).png";
 function Present() {
   const simulatedSlides = [
     {
@@ -39,6 +40,11 @@ function Present() {
   return (
     <div className="Background3">
       <p>Present Page</p>
+      <div className="d-flex justify-content-center gap-3 m-2">
+        <button className="avator-button">
+          <img src={avator1} alt="Avatar 1" />
+        </button>
+      </div>
       <Carousel slide={simulatedSlides} audioRefs={audioRefs} />
     </div>
   );
