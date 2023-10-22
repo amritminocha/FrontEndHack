@@ -27,7 +27,7 @@ function Menu() {
     console.log(template);
   }, [avatar, template]);
   return (
-    <div className="Background">
+    <div className="Background2">
       <div className="content">
         <div className="container text-white p-5">
           <h1 className="Title">Just two steps to go!</h1>
