@@ -12,7 +12,9 @@
   );
   width: 60%;
 }
-
+.h-35{
+  height:35%
+}
 .Background3 {
   background: linear-gradient(
     180deg,

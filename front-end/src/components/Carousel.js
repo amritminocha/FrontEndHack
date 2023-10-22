@@ -21,7 +21,7 @@ function Carousel({ slide, audioRefs }) {
 
   const totalSlides = slide.length;
   return (
-    <div className="center">
+    <div className="center h-35">
       <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
           {slide.map((slide, i) => {
