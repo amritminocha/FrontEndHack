@@ -81,3 +81,32 @@
   flex-shrink: 0;
   box-shadow: 0px 30px 50px 0px rgba(255, 255, 255, 0.2);
 }
+
+.btn-primary {
+    display: flex;
+width: 500px;
+height: 66px;
+padding: 23px 30px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+
+border-radius: 20px;
+border: 1px solid #000;
+background: #FBFFF1;
+box-shadow: 0px 4px 50px 0px rgba(157, 32, 255, 0.36);
+
+color: #000;
+font-weight: 600;
+
+  }
+
+  .btn-primary:hover {
+
+    transition: background-color 1s ease;
+    background-color: #4300fa;
+    
+
+  }
+  
