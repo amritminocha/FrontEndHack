@@ -56,7 +56,7 @@ function Home() {
         </div>
         <div className="d-flex container text-white pe-5 pt-5 ps-5 justify-content-center pb-2">
           <textarea
-            className="content w-50 p-2 h-150px"
+            className="content w-50 p-2 h-150px text-white"
             placeholder="Enter prompt or a Youtube URL..."
             value={text}
             onChange={(e) => setText(e.target.value)}
