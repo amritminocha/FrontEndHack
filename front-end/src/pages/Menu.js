@@ -18,7 +18,6 @@ function Menu() {
   const location = useLocation();
   const [text, setText] = useState(location.state.text);
   const [type, setType] = useState(location.state.type);
-  const [file, setFile] = useState(location.state.file);
   const [language, setLanguage] = useState(location.state.language);
   const [avatar, setAvatar] = useState(1);
   const [template, setTemplate] = useState(1);
@@ -119,17 +118,10 @@ function Menu() {
                 className={` ${avatar === 6 ? "selected" : ""}`}
               />
             </button>
-            
-
-          
-
           </div>
           <div className="d-flex container text-white justify-content-center z-5">
-          <button className="create-button" >
-            Create Presentation
-           </button>
+            <button className="create-button">Create Presentation</button>
           </div>
-          
         </div>
       </div>
     </div>

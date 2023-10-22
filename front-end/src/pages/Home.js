@@ -19,12 +19,7 @@ function Home() {
 
   function handleClick(e) {
     e.preventDefault();
-    if (file !== "") {
-      console.log(file);
-      history("/menu", {
-        state: { text: text, type: type, file: file, language: language },
-      });
-    } else if (type === "prompt") {
+    if (type === "prompt") {
       if (text !== "") {
         history("/menu", {
           state: { text: text, type: type, language: language },
@@ -83,18 +78,6 @@ function Home() {
             />
             <label className="form-check-label z-5">Prompt</label>
           </div>
-        </div>
-        <div className="d-flex container text-white justify-content-center z-5 pb-3">
-          <label htmlFor="file" className="custom-file-upload">
-            Select File
-          </label>
-          <input
-            type="file"
-            id="file"
-            className="text-primary"
-            onChange={handleFile}
-            style={{ display: "none" }}
-          />
         </div>
         <div className="d-flex container text-white justify-content-center gap-5 p-2 z-5 pb-3">
           <div class="dropdown">
