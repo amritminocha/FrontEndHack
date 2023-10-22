@@ -1,0 +1,38 @@
+.Background {
+  background: linear-gradient(
+    180deg,
+    #110e17 0%,
+    rgba(144, 115, 203, 0.56) 100%
+  );
+  background-color: #110e17;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  opacity: 1;
+  z-index: 15;
+}
+
+.Title {
+  color: #fff;
+  text-align: center;
+  font-family: "Palatino Linotype", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 102%; /* 83.64px */
+  align-content: center;
+}
+
+.Title2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Palatino Linotype", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 102%; /* 83.64px */
+  align-content: center;
+  padding-top: 10px;
+}

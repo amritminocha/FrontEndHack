@@ -1,13 +1,8 @@
-import "./css/Card.css"
-function Card({ title, description, image }) {
+import "./css/Card.css";
+function Card({ image, title, size }) {
   return (
-    <div className="card w-300 c">
-      <img className = "h-50" src={image} alt={title} />
-      <div className="card-body">
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <a href = "#" className="stretched-link"></a>
-      </div>
+    <div className="card w-200 c">
+      <img className="h-100" src={image} alt={title} />
     </div>
   );
 }
