@@ -56,11 +56,11 @@ box-shadow: -10px 10px 20px 0px rgba(138, 138, 138, 0.70);
 }
 
 .selected {
-  border: 7px solid rgb(232, 31, 128);
+  border: 6px solid #B28BFF;;
 }
 
 .selected2 {
-  border: 7px solid rgb(58, 232, 31);
+  border: 6px solid #B28BFF;;
 }
 
 .create-button {
@@ -86,7 +86,7 @@ box-shadow: -10px 10px 20px 0px rgba(138, 138, 138, 0.70);
 .create-button:hover {
 
   transition: background-color 1s ease;
-  background-color: #4300fa;
+  background-color: #B28BFF;;
   color: white;
 
 }
