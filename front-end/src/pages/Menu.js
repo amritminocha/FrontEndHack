@@ -119,7 +119,17 @@ function Menu() {
                 className={` ${avatar === 6 ? "selected" : ""}`}
               />
             </button>
+            
+
+          
+
           </div>
+          <div className="d-flex container text-white justify-content-center z-5">
+          <button className="create-button" >
+            Create Presentation
+           </button>
+          </div>
+          
         </div>
       </div>
     </div>
