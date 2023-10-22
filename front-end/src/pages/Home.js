@@ -1,10 +1,6 @@
 import "./css/Home.css";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import img1 from "../assets/background_images/img1.png";
-import img2 from "../assets/background_images/img2.png";
-import img3 from "../assets/background_images/img3.png";
-import img4 from "../assets/background_images/img4.png";
 function Home() {
   const [text, setText] = useState("");
   const [file, setFile] = useState("");

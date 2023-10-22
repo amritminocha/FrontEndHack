@@ -1,45 +1,114 @@
 import Carousel from "../components/Carousel";
 import "./css/Present.css";
-import template1 from "../assets/templates/template1 (1).png";
-import template2 from "../assets/templates/template1 (2).png";
-import template3 from "../assets/templates/template1 (3).png";
-import music1 from "../assets/audio_samples/music1.mp3";
-import music2 from "../assets/audio_samples/music2.mp3";
-import music3 from "../assets/audio_samples/music3.mp3";
+import Slide1 from "../assets/background_images/Slide1.JPG";
+import Slide2 from "../assets/background_images/Slide2.JPG";
+import Slide3 from "../assets/background_images/Slide3.JPG";
+import Slide4 from "../assets/background_images/Slide4.JPG";
+import Slide5 from "../assets/background_images/Slide5.JPG";
+import Slide6 from "../assets/background_images/Slide6.JPG";
+import Slide7 from "../assets/background_images/Slide7.JPG";
+import Slide8 from "../assets/background_images/Slide8.JPG";
+import Slide9 from "../assets/background_images/Slide9.JPG";
+import Slide10 from "../assets/background_images/Slide10.JPG";
+import audio1 from "../assets/audio_samples/audio1.mp3";
+import audio2 from "../assets/audio_samples/audio2.mp3";
+import audio3 from "../assets/audio_samples/audio3.mp3";
+import audio4 from "../assets/audio_samples/audio4.mp3";
+import audio5 from "../assets/audio_samples/audio5.mp3";
+import audio6 from "../assets/audio_samples/audio6.mp3";
+import audio7 from "../assets/audio_samples/audio7.mp3";
+import audio8 from "../assets/audio_samples/audio8.mp3";
+import audio9 from "../assets/audio_samples/audio9.mp3";
+import audio10 from "../assets/audio_samples/audio10.mp3";
 import avator1 from "../assets/avators/avator (1).png";
 function Present() {
   const simulatedSlides = [
     {
-      src: template1,
+      src: Slide1,
       alt: "Slide 1",
     },
     {
-      src: template2,
+      src: Slide2,
       alt: "Slide 2",
     },
     {
-      src: template3,
+      src: Slide3,
       alt: "Slide 3",
+    },
+    {
+      src: Slide4,
+      alt: "Slide 4",
+    },
+    {
+      src: Slide5,
+      alt: "Slide 5",
+    },
+    {
+      src: Slide6,
+      alt: "Slide 6",
+    },
+    {
+      src: Slide7,
+      alt: "Slide 7",
+    },
+    {
+      src: Slide8,
+      alt: "Slide 8",
+    },
+    {
+      src: Slide9,
+      alt: "Slide 9",
+    },
+    {
+      src: Slide10,
+      alt: "Slide 10",
     },
   ];
   const simulatedAudio = [
     {
-      src: music1,
+      src: audio1,
       alt: "Music 1",
     },
     {
-      src: music2,
+      src: audio2,
       alt: "Music 2",
     },
     {
-      src: music3,
+      src: audio3,
       alt: "Music 3",
+    },
+    {
+      src: audio4,
+      alt: "Music 4",
+    },
+    {
+      src: audio5,
+      alt: "Music 5",
+    },
+    {
+      src: audio6,
+      alt: "Music 6",
+    },
+    {
+      src: audio7,
+      alt: "Music 7",
+    },
+    {
+      src: audio8,
+      alt: "Music 8",
+    },
+    {
+      src: audio9,
+      alt: "Music 9",
+    },
+    {
+      src: audio10,
+      alt: "Music 10",
     },
   ];
   const audioRefs = simulatedAudio.map((prop) => new Audio(prop.src));
   return (
     <div className="Background3">
-      <p>Present Page</p>
       <div className="d-flex justify-content-center gap-3 m-2">
         <button className="avator-button">
           <img src={avator1} alt="Avatar 1" />

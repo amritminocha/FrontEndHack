@@ -120,7 +120,9 @@ function Menu() {
             </button>
           </div>
           <div className="d-flex container text-white justify-content-center z-5">
-            <button className="create-button">Create Presentation</button>
+            <a href="/present" className="create-button">
+              Create Presentation
+            </a>
           </div>
         </div>
       </div>
